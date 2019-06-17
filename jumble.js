@@ -28,7 +28,8 @@ String.prototype.dejumbleSort = function(){
     return sortedDict[sorted];
 };
 
-function getcombinations(k) {
+function getcombinations(arr, k){
+    
 };
 
 
