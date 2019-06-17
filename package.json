@@ -1,0 +1,26 @@
+{
+  "name": "jumble",
+  "version": "1.0.0",
+  "description": "",
+  "main": "jumble.js",
+  "dependencies": {
+    "webpack": "^4.34.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --watch --mode=development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natedonato/dejumble.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/natedonato/dejumble/issues"
+  },
+  "homepage": "https://github.com/natedonato/dejumble#readme"
+}
