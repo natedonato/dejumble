@@ -36,10 +36,10 @@ document.addEventListener("DOMContentLoaded", () => {
     let button = document.getElementById("button");
 
     button.addEventListener("click", () => {
-        let str1 = one.value;
-        let str2 = two.value;
-        let str3 = three.value;
-        let str4 = four.value;
+        let str1 = one.value.toLowerCase();
+        let str2 = two.value.toLowerCase();
+        let str3 = three.value.toLowerCase();
+        let str4 = four.value.toLowerCase();
         
         console.log(str1.dejumbleSort());
         console.log(str2.dejumbleSort());

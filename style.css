@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: whitesmoke;
+
+}
+#box{
+    font-size: 32px;
+    margin: 30px auto;
+    background: white;
+    border: 1px solid grey;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#box > input{
+    font-size: 24px;
+    margin: 10px;
+    width: 250px;
+    text-align: center;
+    padding: 8px 4px;
+    box-sizing: border-box;
+}
+
+#box > input:focus{
+    outline: none;
+    border: 2px solid darkgray;
+    
+}
+
+#button{
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #f03838;
+    color: white;
+    width: 250px;
+    height: 48px;
+    padding: 5px 9px;
+    cursor: pointer;
+    outline: none;
+}
