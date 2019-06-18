@@ -29,6 +29,7 @@ String.prototype.dejumbleSort = function(){
 };
 
 document.addEventListener("DOMContentLoaded", () => {
+    
     let one = document.getElementById('1');
     let two = document.getElementById('2');
     let three = document.getElementById('3');
