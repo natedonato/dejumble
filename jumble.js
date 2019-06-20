@@ -56,6 +56,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 el.value = "No answers found :(";
                 select.appendChild(el);
             }else{
+                if(outputs.length > 1){
+                    var el = document.createElement("option");
+                    el.textContent = `${outputs.length} Answers Found:`;
+                    select.appendChild(el);
+                }   
                 for (var i = 0; i < outputs.length; i++) {
                     var opt = outputs[i];
                     var el = document.createElement("option");
