@@ -41,9 +41,6 @@ body{
 #box > select{
     height: 48px;
 }
-select > option{
-    text-align: center;
-}
 
 #box > input:focus{
     outline: none;
