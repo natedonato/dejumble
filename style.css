@@ -21,7 +21,7 @@ body{
     box-sizing: border-box;
 }
 
-#box > input{
+#box > input, select{
     font-size: 24px;
     margin: 10px;
     width: 250px;
@@ -30,10 +30,13 @@ body{
     box-sizing: border-box;
 }
 
-#box > input:focus{
+#box > input:focus, select:focus{
     outline: none;
     border: 2px solid darkgray;
-    
+}
+
+#box > select:focus{
+    outline: none;
 }
 
 #button{

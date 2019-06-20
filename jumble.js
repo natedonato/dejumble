@@ -41,9 +41,35 @@ document.addEventListener("DOMContentLoaded", () => {
         let str3 = three.value.toLowerCase();
         let str4 = four.value.toLowerCase();
         
-        console.log(str1.dejumbleSort());
-        console.log(str2.dejumbleSort());
-        console.log(str3.dejumbleSort());
-        console.log(str4.dejumbleSort());
+        // console.log(str1.dejumbleSort());
+        // console.log(str2.dejumbleSort());
+        // console.log(str3.dejumbleSort());
+        // console.log(str4.dejumbleSort());
+
+        [str1, str2, str3, str4].forEach((string, index) => {
+            var select = document.getElementById("menu".concat(index + 1));
+            select.innerHTML = "";
+            var outputs = string.dejumbleSort();
+            if(outputs === false){
+                var el = document.createElement("option");
+                el.textContent = "No answers found :(";
+                el.value = "No answers found :(";
+                select.appendChild(el);
+            }else{
+                for (var i = 0; i < outputs.length; i++) {
+                    var opt = outputs[i];
+                    var el = document.createElement("option");
+                    el.textContent = opt;
+                    el.value = opt;
+                    select.appendChild(el);
+                }
+            }
+        });
+
+        
+     
+
+
+
     });
 });
