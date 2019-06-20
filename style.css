@@ -1,14 +1,22 @@
 *{
     box-sizing: border-box;
 }
+html{
+    height: 100%;
+}
 
 body{
     background: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 
 }
 #box{
+    height: 452px;
     font-size: 32px;
-    margin: 30px auto;
+    margin: 30px;
     background: white;
     border: 1px solid grey;
     border-radius: 5px;
@@ -28,6 +36,13 @@ body{
     text-align: center;
     padding: 8px 4px;
     box-sizing: border-box;
+}
+
+#box > select{
+    height: 48px;
+}
+select > option{
+    text-align: center;
 }
 
 #box > input:focus{
