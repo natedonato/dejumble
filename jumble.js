@@ -40,7 +40,8 @@ document.addEventListener("DOMContentLoaded", () => {
         let str2 = two.value.toLowerCase();
         let str3 = three.value.toLowerCase();
         let str4 = four.value.toLowerCase();
-        
+        let box2 = document.getElementsByClassName("box2")[0];
+        box2.style.display = "flex";
         // console.log(str1.dejumbleSort());
         // console.log(str2.dejumbleSort());
         // console.log(str3.dejumbleSort());
@@ -58,6 +59,9 @@ document.addEventListener("DOMContentLoaded", () => {
             }else{
                 if(outputs.length > 1){
                     var el = document.createElement("option");
+                    el.setAttribute("disabled", "");
+                    el.setAttribute("selected", "");
+                    el.setAttribute("hidden", "");
                     el.textContent = `${outputs.length} Answers Found:`;
                     select.appendChild(el);
                 }   
