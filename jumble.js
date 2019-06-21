@@ -1,5 +1,7 @@
 // const { dict } = require("./words_dictionary.js");
 const { sortedDict } = require("./output.js");
+var Iter = require('es-iter');
+
 // const fs = require('fs');
 
 
@@ -27,6 +29,44 @@ String.prototype.dejumbleSort = function(){
     }
     return sortedDict[sorted];
 };
+
+const ultimateDejumble = (string, arr) => {
+    let combinations = new Iter(string).combinations(arr[0]).toArray();
+    let words = [];
+    combinations.forEach(combo => {
+        let sorted = combo.join("").dejumbleSort();
+
+        if(sorted){
+            words.push(sorted);
+        }
+    })
+    if(arr.length === 1){
+        return words;
+    }
+    else{
+        let newwords = [];
+        words.forEach(word => {
+
+            let nextstring = string;
+            word[0].split("").forEach(char => { nextstring = nextstring.replace(char, "")});
+
+            let next = ultimateDejumble(nextstring, arr.slice(1));
+            if(next.length !== 0){
+                
+
+
+                newwords.push([word, next])
+            }
+        })
+
+        return newwords;
+    }
+};
+
+
+
+
+
 
 document.addEventListener("DOMContentLoaded", () => {
     let one = document.getElementById('1');
@@ -74,11 +114,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
             }
         });
-
-        
-     
-
-
-
     });
 });
+
