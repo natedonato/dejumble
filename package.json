@@ -4,6 +4,7 @@
   "description": "",
   "main": "jumble.js",
   "dependencies": {
+    "itertools": "^1.3.2",
     "webpack": "^4.34.0"
   },
   "devDependencies": {
