@@ -1,7 +1,7 @@
 # DEJUMBLE.js
 [WIP Live Demo](https://natedonato.com/dejumble) 
 
-  Dejumble.js is a web app to help solve the Jumble (the word game as seen in newspapers and [here online](https://www.jumble.com/)).  It uses a word dictionary found at https://github.com/dwyl/english-words/ to check if a given string is a valid english language word (contains over 450,000 words).
+  Dejumble.js is a web app to help solve the Jumble (the word game as seen in newspapers and [here online](https://www.jumble.com/)).  It uses a custom version of a word dictionary found [on github](https://github.com/dwyl/english-words/) to check if a given string is a valid english language word (the dictionary contains over 450,000 words).
   
   Example of a typical newspaper jumble puzzle:
     <img src="https://raw.githubusercontent.com/natedonato/dejumble/master/jumbleimages/jumble2.jpg" > 
