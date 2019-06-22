@@ -52,7 +52,6 @@ const ultimateDejumble = (string, arr) => {
 
             let next = ultimateDejumble(nextstring, arr.slice(1));
             if(next.length !== 0){
-                
                 newwords.push([word, next])
             }
         })
