@@ -52,17 +52,8 @@ const ultimateDejumble = (string, arr) => {
 
             let next = ultimateDejumble(nextstring, arr.slice(1));
             if(next.length !== 0){
-
-                word.forEach(word1 => {
-
                 
-
-                next[0].forEach(word2 => {
-                    console.log([word1, word2])
-                    newwords.push([word1, word2]) 
-                })
-
-                })
+                newwords.push([word, next])
             }
         })
 
@@ -70,7 +61,6 @@ const ultimateDejumble = (string, arr) => {
     }
 };
 
-debugger;
 
 
 
